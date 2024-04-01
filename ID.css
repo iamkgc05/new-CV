@@ -1,0 +1,46 @@
+/*ID CARD*/
+:root {
+    --bleu: #29512F;
+    --beige: #FBFBEF;
+    --purple: #28502E;
+    --pastelpink: #A3D076;
+    --icon: #70A739;
+}
+
+.card_info {
+    box-shadow: 0 8px 8px 10px rgba(87, 84, 84, 0.4);
+    max-width: 250px;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+}
+
+.avatar {
+    width: 130px;
+    height: 130px;
+    border: 4px solid black;
+    border-radius: 50%;
+    font-size: 100px;
+    margin: auto;
+}
+
+.designation {
+    font-size: 18px;
+}
+
+.social {
+    margin: 20px 0;
+}
+
+.circular--portrait {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.circular--portrait img {
+    width: 100%;
+    height: auto;
+}

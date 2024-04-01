@@ -1,0 +1,105 @@
+:root {
+    --bleu: #29512F;
+    --beige: #FBFBEF;
+    --purple: #28502E;
+    --pastelpink: #A3D076;
+    --icon: #70A739;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo {
+    float: left;
+    padding: 10px 0;
+    height: 60px;
+}
+
+nav {
+    height: 80px;
+    width: 100%;
+    background: var(--pastelpink);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+}
+
+nav ul {
+    float: right;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 20px;
+    padding-top: 30px;
+    position: relative;
+}
+
+nav a {
+    color: var(--bleu);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav a:hover,
+nav a.active {
+    color: var(--purple);
+    transition: .5s;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100px;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 300ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container .logo {
+        order: 1;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: var(--pastelpink);
+        transition: all 0.5s ease;
+
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+}
