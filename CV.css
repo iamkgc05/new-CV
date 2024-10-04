@@ -71,8 +71,14 @@ body {
     }
 
 }
+@media(min-width:768px) {
+    .section {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        position: relative;
+    }
 
-
+}
 
 @media(min-width:992px) {
     .section {
