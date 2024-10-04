@@ -79,7 +79,7 @@ nav a:hover::before {
     width: 100%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 791px) {
     .container {
         display: flex;
         flex-direction: column;
