@@ -48,8 +48,8 @@
 .download-button {
     display: inline-block;
     padding: 10px 20px;
-    color: white;
-    background-color: var(--hover);
+    color: black;
+    background-color: var(--beige);
     border-radius: 5px;
     text-decoration: none;
     font-size: 16px;
@@ -57,7 +57,7 @@
 }
 
 .download-button:hover {
-    background-color: var(--element);
-    color: var(--text);
+    background-color: var(--bleu);
+    color: var(--pastelpink);
     transform: scale(1.05);
 }
